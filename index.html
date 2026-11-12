@@ -1,15 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Deivide</title>
+    <meta name="description" content="Portfólio profissional de Deivide Machado, desenvolvedor de sistemas em formação em Salvador, Bahia.">
+    <meta name="theme-color" content="#101b2b">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Deivide Machado | Desenvolvedor de Sistemas</title>
 </head>
-
-
 <body>
-    
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="hero">
+        <div class="hero__inner">
+            <nav class="navigation" aria-label="Navegação principal">
+                <a class="brand" href="#" aria-label="Deivide Machado - início">
+                    <span class="brand__mark">DM</span>
+                    <span>Deivide Machado</span>
+                </a>
+                <ul class="navigation__links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a class="navigation__contact" href="#contato">Contato <span aria-hidden="true">↗</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="hero__content">
+                <div class="hero__copy">
+                    <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Desenvolvedor em formação · Salvador, BA</p>
+                    <h1>Construindo soluções,<br><span>uma linha de código</span> de cada vez.</h1>
+                    <p class="hero__description">Olá, eu sou Deivide. Estudo Desenvolvimento de Sistemas e gosto de transformar ideias em aplicações úteis e experiências digitais simples.</p>
+                    <div class="hero__actions">
+                        <a class="button button--primary" href="#projetos">Conheça meus projetos <span aria-hidden="true">↓</span></a>
+                        <a class="text-link" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+                <div class="hero__visual" aria-hidden="true">
+                    <div class="orbit orbit--outer"></div>
+                    <div class="orbit orbit--inner"></div>
+                    <div class="monogram">D<span>.</span></div>
+                    <span class="code-chip code-chip--top">&lt;code /&gt;</span>
+                    <span class="code-chip code-chip--bottom">{ criatividade }</span>
+                </div>
+            </div>
+
+            <div class="hero__bottom">
+                <span>Desenvolvimento web &amp; lógica de programação</span>
+                <a href="#sobre" aria-label="Rolar para a seção Sobre">ROLE PARA EXPLORAR <span aria-hidden="true">↓</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main id="conteudo" class="page-content">
+        <section id="sobre" class="about section">
+            <div class="section-heading">
+                <p class="section-kicker">01 / UM POUCO SOBRE MIM</p>
+                <h2>Curioso por natureza.<br><span>Desenvolvedor por escolha.</span></h2>
+            </div>
+            <div class="about__body">
+                <p>Sou <strong>Deivide Jorge Bembem da Silva Machado</strong>, tenho 23 anos, moro em Salvador (BA) e curso Técnico em Desenvolvimento de Sistemas pelo SENAI Dendezeiros.</p>
+                <p>Tenho focado meus estudos na criação de aplicações web e lógica de programação. Gosto de aprender na prática, construir projetos e transformar cada desafio em uma oportunidade para evoluir.</p>
+                <a class="text-link text-link--dark" href="https://www.linkedin.com/in/deivide-bembem-01b28620b/" target="_blank" rel="noopener noreferrer">Mais sobre minha trajetória <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+
+        <section id="habilidades" class="skills section">
+            <div class="section-heading section-heading--compact">
+                <p class="section-kicker">02 / MINHA CAIXA DE FERRAMENTAS</p>
+                <h2>Tecnologias &amp; habilidades</h2>
+            </div>
+            <ul class="skill-list" aria-label="Tecnologias e habilidades">
+                <li><span class="skill-list__number">01</span> HTML5</li>
+                <li><span class="skill-list__number">02</span> CSS3</li>
+                <li><span class="skill-list__number">03</span> JavaScript</li>
+                <li><span class="skill-list__number">04</span> Python</li>
+                <li><span class="skill-list__number">05</span> JSON</li>
+                <li><span class="skill-list__number">06</span> Git &amp; GitHub</li>
+            </ul>
+        </section>
+
+        <section id="projetos" class="projects section">
+            <div class="projects__intro">
+                <div class="section-heading section-heading--compact">
+                    <p class="section-kicker">03 / FEITO COM CURIOSIDADE</p>
+                    <h2>Projetos selecionados</h2>
+                </div>
+                <p>Projetos práticos que representam meu aprendizado e minha evolução como desenvolvedor.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-card__top"><span class="project-card__index">01</span><span class="project-card__icon" aria-hidden="true">×</span></div>
+                    <h3>Calculadora Multiplicadora</h3>
+                    <p>Uma aplicação em JavaScript para gerar a tabuada de multiplicação de um número. Um exercício prático de lógica e estruturas de repetição.</p>
+                    <ul class="tag-list" aria-label="Tecnologias usadas"><li>HTML</li><li>JavaScript</li></ul>
+                    <a class="project-card__link" href="https://github.com/deividebembem/projeto_css" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a>
+                    <a class="project-card__link" href="https://gerador-de-tabuada-two.vercel.app/" target="_blank" rel="noopener noreferrer">Ver código no funcionando <span aria-hidden="true">↗</span></a>
+
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__top"><span class="project-card__index">02</span><span class="project-card__icon" aria-hidden="true">+</span></div>
+                    <h3>Sistema Hospitalar</h3>
+                    <p>Simulação de um hospital de pequeno porte com cadastro de médicos, agendamento de consultas e confirmação de atendimentos.</p>
+                    <ul class="tag-list" aria-label="Tecnologias usadas"><li>HTML</li><li>JavaScript</li><li>JSON</li></ul>
+                    <a class="project-card__link" href="https://github.com/deividebembem/atividade-2" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__top"><span class="project-card__index">03</span><span class="project-card__icon" aria-hidden="true">⌂</span></div>
+                    <h3>Sistema de Gestão Hoteleira</h3>
+                    <p>Programa para gerenciamento de hotéis, com controle de quartos, diárias, clientes e funcionários, além de perfil de gerência.</p>
+                    <ul class="tag-list" aria-label="Tecnologias usadas"><li>Python</li></ul>
+                    <a class="project-card__link" href="https://github.com/deividebembem/avalia-o" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" class="contact">
+            <p class="section-kicker">04 / VAMOS CONVERSAR?</p>
+            <h2>Tem um projeto<br>em mente?</h2>
+            <p>Estou sempre aberto a aprender, colaborar e conhecer novas oportunidades.</p>
+            <a class="button button--light" href="mailto:deividebembem@gmail.com">Enviar um e-mail <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="brand brand--footer" href="#" aria-label="Deivide Machado - início">
+            <span class="brand__mark">DM</span>
+            <span>Deivide Machado</span>
+        </a>
+        <p>Desenvolvido por Deivide Jorge Bembem da Silva Machado</p>
+        <ul class="footer__links" aria-label="Redes sociais">
+            <li><a href="mailto:deividebembem@gmail.com">E-mail</a></li>
+            <li><a href="https://github.com/deividebembem" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/deivide-bembem-01b28620b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
-
-
